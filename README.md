@@ -5,12 +5,13 @@ See [the FAQ](https://indigo.cafe/help/faq) if you have any questions about this
 ## Installation
 1. Install the latest version of Go from [golang.org](https://golang.org/dl/) or from the official gopher repository.
 2. Download the .ZIP file or clone the repository like any other project.
-3. Install all the dependencies with `go get ./...`.
-4. Set up a MySQL server and import structure.sql.
-5. Modify the config.json file to your liking.
-6. Optional: If you want to install GeoIP (necessary for user timezones to be correct and getting user regions), [download a GeoLite database from MaxMind](https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz), unzip the file and rename it geoip.mmdb and put in the same folder as main.go.
-7. Build the server with `go build` and then run the new program that is created, or use `go run *.go` (Linux/MacOS only).
-8. Make an account, give yourself admin through the MySQL CLI (`UPDATE users SET level = 9 WHERE id = 1`, for example) or your favorite database management interface (e.g. PHPMyAdmin), and start making some communities!
+3. Create a go.mod file using `go mod init yourdomain.com/m/v2` (you can change yourdomain.com by your domain or just make it a dummy one, like example.com)
+4. Install all the dependencies with `go get ./...`.
+5. Set up a MySQL server and import structure.sql.
+6. Modify the config.json file to your liking.
+7. Optional: If you want to install GeoIP (necessary for user timezones to be correct and getting user regions), [download a GeoLite database from here](https://github.com/lunasoldstuff/shell/raw/master/geoip.mmdb), and put in the same folder as main.go.
+8. Build the server with `go build` and then run the new program that is created, or use `go run *.go` (Linux/MacOS only).
+9. Make an account, give yourself admin through the MySQL CLI (`UPDATE users SET level = 9 WHERE id = 1`, for example) or your favorite database management interface (e.g. PHPMyAdmin), and start making some communities!
 ## Credits
 Lead developers: [PF2M](https://github.com/PF2M), [EnergeticBark](https://github.com/EnergeticBark)
 
