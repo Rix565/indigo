@@ -1,0 +1,64 @@
+{
+	"Port": ":8080",
+	"SSL": {
+		"Enabled": false,
+		"Certificate": "",
+		"Key": ""
+	},
+	"DB": {
+		"Host": "localhost",
+		"Username": "root",
+		"Password": "",
+		"Name": "indigo"
+	},
+	"ImageHost": {
+		"Provider": "cloudinary",
+		"Username": "username",
+		"APIEndpoint": "https://api.cloudinary.com",
+		"APIPublic": "",
+		"APISecret": "",
+		"ImageEndpoint": "",
+		"UploadPreset": "unsigned upload preset here",
+		"MaxUploadSize": ""
+	},
+	"Webhooks": {
+		"Enabled": false,
+		"Reports": "",
+		"Signups": "",
+		"Logins": ""
+	},
+	"ReCAPTCHA": {
+		"Enabled": false,
+		"SiteKey": "",
+		"SecretKey": ""
+	},
+	"SMTP": {
+		"Enabled": false,
+		"Hostname": "",
+		"Port": ":25",
+		"Email": "",
+		"Password": ""
+	},
+	"CSRFSecret": "hahanoob",
+	"IPHubKey": "",
+	"Proxy": false,
+	"ForceLogins": true,
+	"AllowSignups": true,
+	"DefaultTimezone": "America/New_York",
+	"ReportReasons": [
+		{
+			"Name": "Spoiler",
+			"Message": "Your post contained spoilers, so it was removed.",
+			"Enabled": false,
+			"BodyRequired": true
+		},
+		{
+			"Name": "Rulebreaking Content",
+			"Message": "Your post broke the rules, so it was removed.",
+			"Enabled": true,
+			"BodyRequired": false
+		}
+	],
+	"TextToReplace": null,
+	"EmoteLimit": 5
+}
